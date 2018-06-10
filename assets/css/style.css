@@ -1,0 +1,207 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+}
+
+.cabecalho{
+    background-image: url("../images/code-coding-computer-574077.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #F1C40F;
+}
+.menu--itens{
+    list-style: none;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu--item{
+    text-decoration: none;
+    padding: 0.8em;
+    display: block;
+    color: black;
+    background-color: #F1C40F;
+}
+.menu--item_inscricao{
+    background-color: rgb(241, 68, 15) !important;
+    color: white !important;
+}
+.img-fechar-menu{
+    padding: 1em;
+    order: 1;
+}
+.menu-visivel{
+    display: flex;
+}
+.img-abrir-menu{
+    padding: 1em;
+    background-color: rgba(241, 196, 15, 0.575);
+}
+
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif !important;
+}
+.titulo--h1{
+    background-color: rgba(241, 196, 15, 0.575);
+    padding: 0.2em;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+.subtitulo--texto{
+    background-color: rgba(241, 196, 15, 0.575);
+    display: inline-block;
+}
+
+.subtitulo--h2{
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding: 0.3em;
+}
+.subtitulo--h3{
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 0.3em;
+}
+.subtitulo--h4{
+    font-size: 1em;
+    margin: 1em 0; 
+    padding: 0.3em; 
+}
+
+.sobre, .programacao, .localizacao, .contato{
+    text-align: center;
+    margin: 1em;
+    padding: 0.3em;
+}
+.sobre--titulo, .programacao--titulo, .localizacao--titulo, .contato--titulo{
+    margin-bottom: 0.7em;
+}
+
+.sobre--subtitulo{
+    font-size: 0.8em;
+}
+.sobre--texto{
+    text-align: justify;
+    font-size: 0.7em;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.programacao--tabela{
+    width: 100%;
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+.programacao--tabela td{
+    padding: 0.5em;
+    border: 0.1em solid black;
+}
+.programacao--tabela th{
+    padding: 0.5em;
+    border: 0.1em solid black;
+    background-color: lightgrey;
+}
+.programacao--tabela_left{
+    text-align: left;
+}
+.programacao--alerta{
+    text-align: center;
+    color: red;
+    margin: 0.5em;
+}
+
+.contato--texto{
+    font-size: 0.8em;
+    margin: 1em;
+}
+
+
+.rodape{
+    background-color: #F1C40F;
+}
+.rodape--conteudo{
+    padding-top: 2em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+
+@media(min-width: 800px){
+    .cabecalho{
+        height: 100vh;
+    }
+    .img-fechar-menu{
+        display: none;
+    }
+    .menu{
+        background-color: transparent;
+        padding-top: 0.4em;
+        display: flex;
+    }
+    .menu--itens{
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: auto;
+    }
+    .menu--item{
+        background-color: transparent;
+        border-bottom: 0.4em transparent solid;
+        color: black;
+    }
+    .menu--item:hover{
+        border-bottom: 0.4em #F1C40F solid;
+    }
+    
+
+    .img-abrir-menu{
+        display: none;
+    }
+    .titulo, .subtitulo{
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .titulo--h1{
+        font-size: 3em;
+        margin-top: 4em;
+        padding: 0.4em;
+        padding: 0.6em;
+    }
+    .subtitulo--h2{
+        font-size: 2.5em;
+        margin-top: 1em;
+        padding: 0.3em;
+    }
+    .subtitulo--h3{
+        font-size: 2em;
+        margin-top: 1em;
+        padding: 0.3em;
+    }
+    .subtitulo--h4{
+        font-size: 1.4em;
+        margin: 1em 0; 
+        padding: 0.3em; 
+    }
+
+    .sobre, .programacao, .localizacao, .contato, .rodape--conteudo{
+        font-size: 1.8em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
