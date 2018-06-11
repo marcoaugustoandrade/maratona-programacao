@@ -152,6 +152,9 @@
         background-color: transparent;
         padding-top: 0.4em;
         display: flex;
+
+        /*position: fixed;
+        top: 0;*/
     }
     .menu--itens{
         flex-direction: row;
